@@ -1,0 +1,34 @@
+<div class="container-fluid">
+  <div class="dropdown col-xs-4">
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+      <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+     <img src="{{data.userdatas[index].image}}" id="locationimage" class="img-circle"/>
+  </div>
+<div class="text-center col-lg-4 col-xs-4" id="Birthday">{{data.userdatas[index].Name}}<br/>
+</div>
+</div>
+<div class="col-xs-12 text-center">{{data.reward.points}}</div>
+<div class="col-xs-12 text-center">{{data.reward.level}}</div>
+<div class="col-xs-12 text-center">{{data.reward.until}}</div>
+<div class="container-fluid">
+<div ><img src="{{data.reward.image}}" class="img-responsive col-xs-12"></div></div>
+<div class="col-xs-12 text-center"><b style="font-size:12pt">{{data.reward.restaurants}}</b></div>
+<div class="container-fluid" ng-repeat="hotels in data.Hotels | filter:searchText" id="rewardHotels" ng-click="hotel($index)">
+<div class="col-xs-6">
+<div class="" >
+<img id="star" src="{{hotels.ratingone}}">
+<img id="star" src="{{hotels.ratingtwo}}">
+<img id="star" src="{{hotels.ratingthree}}">
+<img id="star" src="{{hotels.ratingfour}}">
+<img id="star" src="{{hotels.ratingfive}}">
+</div>
+</div>
+<div class="col-xs-6">
+<div><div id="resName">{{hotels.restaurant}}</div></div>
+</div>
+
+</div>

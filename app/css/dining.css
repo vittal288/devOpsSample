@@ -1,0 +1,397 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	margin-top:5px;
+	
+	width:100%;
+	height: 100%;
+}
+#left{
+	float:left;
+}
+li{
+ list-style: none;
+ border:10px;
+ background-color: gray;	
+}
+li:HOVER {
+	background-color: white;
+}
+#ProfileImage{
+	margin-top:25px;
+	height:143px;
+	width:143px;
+}
+#Name{
+	
+	font-size:15pt;
+		}
+		@font-face {
+   			 font-family: myFirstname;
+    		 src: url(../lib/bootstarp/fonts/HelveNeuMed.TTF);
+}
+#resName{
+	
+	font-size: 12pt;
+	font-weight: bold;
+	color:#000000;	
+		}
+		@font-face{
+			font-family:restaurantName;
+			src:url(../lib/bootstarp/fonts/HelveNeuMed.TTF);
+	}
+
+#giftCss{
+	height:100px;
+	width:100px;
+}
+#wish{
+	
+	font-size:15pt;
+color:#830092;	
+}
+@font-face{
+	font-family: happy;
+	src:url(../lib/bootstarp/fonts/HelveNeuMed.TTF)
+	
+}
+#Birthday,#nameBold{
+	font-weight: bold;
+	font-size: 12pt;
+}
+#cake{
+	height:143px;
+	width:143px;
+}
+#notify{
+	color:black;
+	float:right;
+}
+#starImage{
+	width:100%;
+}
+#star{
+	width:12%;	
+}
+#table{
+	width:100%;
+	height:auto;
+	
+}
+#details{
+	
+	font-size:10pt;
+	color:#666666;
+}
+@font-face{
+	font-family:Detail;
+	src:url(../lib/bootstarp/fonts/HelveNeuLig.TTF);
+	}
+#foodFont{
+	
+	font-size:9pt;
+	font-weight:bold;	
+	color:#666666;
+		}
+		@font-face{
+			font-family:food;
+			src:url(../lib/bootstarp/fonts/HelveNeuMed.TTF);
+	}
+#offerFont{
+	
+	font-weight: bold;
+	font-size:8pt;
+}
+@font-face{
+	font-family: Offer;
+	src:url(../lib/bootstarp/fonts/HelveNeuMed.TTF);
+}
+#instruction{
+	
+	color:#333333;
+	font-size: 15pt;
+}
+@font-face{
+	font-family: instruct;
+	src:url(../lib/bootstarp/fonts/HelveNeuLig.TTF)
+}
+#dinner{
+	
+	font-size:24pt;
+	color:#000000;
+}
+@font-face{
+	font-family: dineosure;
+	src:url(../lib/bootstarp/fonts/HelveNeuThi.TTF);
+}		
+	
+#left{
+	float:left;
+	width:45%;
+}
+#right{
+	float-right:200px;
+	width:60%;
+}
+#locationimage{
+	width:30px;
+	height:30px;
+}
+#Menu,#notify{
+	font-size: 15pt;
+}
+#chicago{
+	 width: 100%;
+    height: 250px;	
+}
+#miles{
+	float:right;
+	color:#666666;
+}
+#offer{
+	float:right;
+	color:#666666;
+}
+#cusine:hover{
+	 background-color:#d3d3d3;
+}
+#logo{
+	margin-top:5px;
+}
+.pageGap{
+	margin-top:180px;
+}
+#cusine{
+	margin-top:15px;
+}
+#rewardHotels{
+	margin-top:60px;
+}
+#rewardHotels:hover{
+	background-color:#d3d3d3; 
+}
+#list{
+	margin-top:5px;
+}
+#myslides{
+	margin-top:10px;
+}
+.heightAdjust{
+	width:100%; 
+	height:auto;
+	min-height: 100%;
+}
+
+#facebook,#whatsapp,#message{
+	margin-top:30px;
+	width:30%;
+	
+}
+
+#font{
+	font-size:11.5px;
+}
+#uber{
+	width:100%;
+	background-size:100% 400px;
+	background-repeat: no-repeat;
+	
+}
+#business{
+	widht:50%;
+	height:60px;
+	background-color:white;
+	margin-top:240px;
+	color:gray;
+	border-style:groove;
+}
+#fare{
+	widht:50%;
+	height:100px;
+	background-color: white;
+	border-style:groove;
+}
+#promo{
+	widht:50%;
+	height:100px;
+	background-color: white;
+	border-style:groove;
+}
+#busImage{
+	color:gray;
+	margin-top:15px;
+}
+#text,#num,#change{
+	color:gray;
+	margin-top:19px;
+}
+#credit{
+	width:30%;
+
+}
+#request{
+	margin-top:10px;
+}
+#jessi{
+	float:right;
+}
+.count{
+	width:50px;
+}
+#pay{
+	margin-left:200px;
+}
+#card{
+	width:20%;
+	
+}
+
+.radio{
+	height:30px;
+	margin-top:100px
+}
+#tick{
+	height:80px;
+}
+.button{
+	width:20%;
+}
+#hearts { color: #ee8b2d;}
+#hearts-existing { color: #ee8b2d;}
+#background{
+	background-image: url("../images/Background.png");
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	
+	
+}
+#max{
+	max-height: 1000px;
+}
+#Menu{
+	font-size: 25px;
+}
+#locationimage{
+	margin-left:10px;
+	margin-top:-12px;
+}
+
+.mySlides
+{
+	opacity:0.4;	
+}
+.activeSlide
+{
+	opacity:1;
+}
+#payBill{
+	color:white;
+}
+.badge {
+    background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:    -moz-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:     -ms-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:      -o-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background: -webkit-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: red;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    color: white;
+    font:14px/12px Helvetica, Verdana, Tahoma;
+    height: 17px; 
+    padding: 4px 3px 0 3px;
+    text-align: center;
+    min-width: 14px;
+}
+
+/* only needed for this sample */
+.badge {
+    
+    left: -25px;
+    margin: 6px;
+    position: relative;
+    top: 25px;
+    margin-top:-65px; 
+}
+#blackColor{
+	color:black;
+	font-size:25px;
+}
+#slidesGuide{
+	font-family:slidesMenu;
+	color:#000000;
+	
+	}
+	@font-face{
+	font-family:slidesMenu;
+	src:url(..lib/bootstarp/fonts/HelveNeuLig.TTF);
+	}
+.container-fluid
+{
+	padding:0px;
+	
+}
+#appName{
+	font-size:12pt;
+	font-style: bold;
+}
+#log{
+	position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height:35%;
+  
+}
+ 
+    #billColor{
+    color:red;
+    }
+    
+.swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        magin-top:20px;
+    }
+    #login{
+    position:inherit;
+    }
+    #download{
+    width:40%;
+    }
+    #radio{
+    margin:auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width:4%
+    
+    }
+    #lineHeight{
+    line-height: 50px;
+    }
+    
+    #map {
+    height:350px;
+    width:100%;
+}
+.infoWindowContent {
+    font-size:  14px !important;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+h2 {
+    margin-bottom:0;
+    margin-top: 0;
+}
+#shareSocial{
+width:20%;	
+}
+#googleSocial{
+	width:25%;
+}

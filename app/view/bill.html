@@ -1,0 +1,45 @@
+<div id="background" class="heightAdjust" >
+<div class="container-fluid">
+  <div class="dropdown col-xs-4">
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+       <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+     <img src="{{data.userdatas[index].image}}" id="locationimage" class="img-circle"/>
+  </div>
+<div class="text-center col-lg-4 col-xs-4" id="Birthday">{{data.userdatas[index].Name}}<br/>
+</div>
+</div>
+<div class="text-center col-xs-12"><b>{{data.billView.view}}</b></div>
+<div class="text-center col-xs-12">{{data.Hotels[Hotelindex].restaurant}}</div>
+
+<div class="container-fluid">
+<div class="col-xs-offset-2 col-xs-4 ">{{data.billView.jessi}}</div>
+<div class=" col-xs-3 ">{{data.billView.su}}</div>
+</div>
+<div class="container-fluid">
+<div class="col-xs-offset-2 col-xs-4 ">{{data.billView.order}}</div>
+<div class="col-xs-5">{{data.billView.date}}</div>
+</div>
+<div class="text-center col-xs-12"><b>{{data.billView.dining}}</b></div>
+<div class="container-fluid"  ng-repeat="Bill in bill">
+<div class="col-xs-offset-2 col-xs-6"><span class="col-sm-2 col-xs-2">{{Bill.quantity}}</span>{{Bill.Dish}}</div>
+<div class="col-xs-4">{{Bill.price}}</div>
+</div>
+<div class="container-fluid" ng-repeat="Other in others">
+<div class="col-xs-offset-2 col-xs-6"><span class="col-sm-2 col-xs-2"></span>{{Other.taxname}}</div>
+<div class="col-xs-4">{{Other.cash}}</div>
+</div>
+<div class="container-fluid">
+<div class="container-fluid col-xs-offset-2 col-xs-10">{{data.billView.thanks}} {{data.Hotels[Hotelindex].restaurant}}</br><span class="col-xs-offset-1 col-xs-6 text-center">HAMBURGERS</span></div>
+<div class="container-fluid col-xs-offset-2 col-xs-10">{{data.billView.hope}}</div>
+<div class="container-fluid col-xs-offset-2 col-xs-10">{{data.billView.trn}}<span>{{data.billView.tnum}}</span></div>
+<div class="container-fluid col-xs-offset-2 col-xs-10" id="billColor">{{data.billView.Order}}<span>{{data.billView.ornum}}</span></div>
+
+</div><br/>
+<div class="container-fluid">
+<a href="#/payment" id="payBill"><button type="button" class="btn btn-info col-xs-offset-1 col-xs-4" >{{data.billView.payBill}}</button></a>
+<button type="button" class="btn btn-info col-xs-offset-1 col-xs-4">{{data.billView.splitBill}}</button>
+</div></div>

@@ -1,0 +1,59 @@
+<div >
+<div class="dropdown col-xs-4 col-sm-3 col-lg-2 col-md-2" >
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown" style="margin-left:-13px;"></span>
+    <ul class="dropdown-menu">
+        <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+    <img src="{{data.userdatas[index].image}}" id="locationimage" class="img-circle"/>
+  </div>
+ 
+  <center id="slideshow" class="col-xs-8 col-sm-8 col-lg-10 col-md-10">
+<div class="w3-content" style="width:100%; position:relative">
+
+<span id="slidesGuide" class="slide1 mySlides col-xs-3 col-sm-3 col-md-3 col-lg-3" ng-class="{activeSlide:a1}" ng-click="next('a1')"><b>{{data.slides.slideTwo}}</b></span>
+<span id="slidesGuide" class="slide2 mySlides col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3" ng-class="{activeSlide:a2}" ng-click="next('a2')"><b>{{data.slides.slideOne}}</b></span>
+<span id="slidesGuide" class="slide3 mySlides col-xs-offset-1 col-xs-3 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-1 col-lg-3" ng-class="{activeSlide:a3}" ng-click="next('a3')"><b>{{data.slides.slideThree}}</b></span>
+
+
+
+<a href class="w3-btn-floating" style="position:absolute;top:50%;left:0" ng-click="plusDivs(-1)"><img src="images/arrow left.png" id="left"></a>
+<a href class="w3-btn-floating" style="position:absolute;top:50%;right:0" ng-click="plusDivs(1)"><img src="images/arrow right.png" id="right"></a>
+</div>
+</center>
+ </div>
+  <div class="container-fluid">
+  <div>
+    <div id="map"></div>
+    <!-- span id="class" ng-repeat="marker in markers | orderBy : 'title'">
+         <a href="#" ng-click="openInfoWindow($event, marker)">{{marker.title}}</a>&nbsp;&nbsp;
+    </span-->
+</div>
+  </div>
+ <div class="container-fluid" ng-repeat="hotels in data.Hotels" id="cusine" ng-click="hotel($index)">
+<div class="col-xs-3 col-sm-3 col-lg-3 col-md-3">
+
+<img src="{{hotels.image}}" id="table" >
+
+
+</div>
+<div>
+<div class="col-xs-6 col-sm-6 col-lg-6 col-md-6">
+<div id="resName">{{hotels.restaurant}}</div>
+<div id="details">{{hotels.discription}}</div>
+<div id="details" >{{hotels.discriptionSecond}}</div>
+
+</div>
+<div class="col-xs-3 col-sm-3 col-lg-3 col-md-3">
+<div id="details">{{hotels.miles}}</div>
+<div id="offerFont">{{hotels.offer}}</div>
+<div id="starImage" >
+<img id="star" src="{{hotels.ratingone}}">
+<img id="star" src="{{hotels.ratingtwo}}">
+<img id="star" src="{{hotels.ratingthree}}">
+<img id="star" src="{{hotels.ratingfour}}">
+<img id="star" src="{{hotels.ratingfive}}">
+</div>
+</div>
+</div>

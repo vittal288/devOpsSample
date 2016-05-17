@@ -1,0 +1,20 @@
+<div id="background" class="heightAdjust">
+<div id="log">
+<center id="appName">
+CUSTOMER DINING
+</center>
+<div class="container col-xs-12" id="login">
+  <form role="form" >
+    <div class="form-group">
+      <label for="usr" id="user">{{data.Login.User}}:</label>
+      <input type="text" class="form-control" ng-model="user" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd"  id="user">{{data.Login.passWord}}:</label>
+      <input type="password" class="form-control" ng-model="pass" required>
+    </div>
+    <button type="button" class="btn btn-success" ng-click="validate()">Login</button>
+  </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,49 @@
+<div class="heightAdjust">
+<div class="container-fluid">
+<div class="dropdown col-xs-4">
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+       <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+  </div>
+<center>
+<div class="col-xs-4"><b>{{data.common.List}}</b></div>
+</center>
+</div>
+<center>
+<img src="{{data.Hotels[Hotelindex].logo}}" id="logo">
+</center>
+<center>
+<h1>{{data.cab.taxi}}</h1>
+</center>
+<div id="uber" class="container-fluid" style="background-image:{{data.cab.background}}">
+<div id="full">
+<div class="col-xs-offset-1 col-xs-10" id="business">
+<div class="col-xs-2"><img src="images/business.jpg" id="busImage"></div>
+<div class="col-xs-2" id="text"><b class="ng-binding">BUSINESS</b></div>
+<div class="col-xs-offset-1 col-xs-4" id="num"><b class="ng-binding">**** 1234</b>
+
+</div>
+<div class=" col-xs-1" id="change"><b class="ng-binding">CHANGE</b></div>
+</div>
+
+
+<div class="col-xs-offset-1 col-xs-5" id="fare">
+<div><center><img src="{{data.cab.CARD}}" id="credit"></br>
+<h5>{{data.cab.fare}}</h5>
+
+</center></div>
+</div>
+<div class="col-xs-5" id="promo">
+<div><center><img src="{{data.cab.left}}" id="credit"></br>
+<h5>{{data.cab.promo}}</h5>
+</div>
+</div>
+</div>
+<div id="request">
+<button class="btn text-center col-xs-12" style="color:white;background-color: black;margin-right:1px;"><b>REQUEST BLACK CAR</b></buttom>
+</div>
+<div class="text-center col-xs-12"><b>{{data.cab.pickup}}</b></div>
+</div>

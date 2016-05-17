@@ -1,0 +1,59 @@
+<div id="background"  class="container-fluid heightAdjust">
+<div class="container-fluid">
+  <div class="dropdown col-xs-4">
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+       <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+     <img src="{{data.userdatas[index].image}}" id="locationimage" class="img-circle"/>
+  </div>
+<div class="text-center col-lg-4 col-xs-4" id="Birthday">{{data.userdatas[index].Name}}<br/>
+</div>
+</div>
+<center>
+<img src="{{data.Hotels[Hotelindex].logo}}" id="logo">
+</center>
+<div class="container-fluid">
+<button type="button" class="btn btn-info col-xs-offset-2 col-xs-4" style="background-color: gray;" >{{data.payment.existing}}</button>
+<button type="button" class="btn btn-info col-xs-4">{{data.payment.New}}</button>
+</div>
+ <form role="form">
+    <div class="form-group">
+      <label for="usr">{{data.payment.cardName}}</label>
+      <input type="text" class="form-control" id="usr" ng-model="cardName">
+    </div>
+    <div class="form-group">
+      <label for="pwd">{{data.payment.cardNum}}</label>
+      <input type="text" pattern="[0-9]{13-16}" class="form-control" id="pwd" min="16" max="16" maxlength="16" ng-model="cardNum">
+    </div>
+    <div class="container-fluid">
+    <div class="form-group col-xs-6">
+      <label for="pwd">{{data.payment.expiry}}</label>
+     <div id="pwd">
+      <input class="col-xs-5" type="text"  class="form-control" placeholder="MM" ng-model="cardMonth">
+      <input class="col-xs-6" type="text"  class="form-control" placeholder="YY" ng-model="cardYear">
+      </div>
+    </div>
+    <div class="form-group col-xs-offset-3 col-xs-3">
+     <label for="cvv">{{data.payment.cvv}}</label>
+      <input  type="text" id="cvv" class="form-control " placeholder="cvv" ng-model="cardCvv">
+     </div>
+    </div>
+  </form>
+  <div class="">
+  <img src="{{data.payment.visa}}" id="card">
+  <img src="{{data.payment.master}}" id="card">
+  <img src="{{data.payment.amex}}" id="card">
+  </div>
+ <div class="container-fluid">
+  <img src="images/reward.png" class="col-xs-2" id="card">
+  <div class="col-xs-8 text-center reward"><h3>{{data.payment.reward}}</h3></div>
+  <div><img src="images/radio selected.png" id="radio"></div>
+  </div>
+  <div class="container-fluid">
+<a href="#/success"><button type="button" class="btn btn-info col-xs-offset-4 col-xs-5" >{{data.payment.pay}}</button></a>
+
+</div>
+   </div>

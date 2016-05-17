@@ -1,0 +1,39 @@
+
+<div class="container-fluid">
+  <div class="dropdown col-xs-4">
+    <span class="dropdown-toggle {{data.screen1.glyphiconMenu}}" id="Menu" data-toggle="dropdown"></span>
+    <ul class="dropdown-menu">
+       <li><a href="#/search">{{data.common.search}}</a></li>
+        <li><a href="#/rating">{{data.common.rating}}</a></li>
+        <li><a href="#/location">{{data.common.location}}</a></li>
+    </ul>
+  </div>
+ <center>
+<div class="col-lg-4 col-xs-4" id="Birthday">{{data.screen1.Birth}}<br/>
+</div></center>
+
+<div id="notify">
+<a id='locationHref' href="#/location"><div class=" {{data.screen1.glyphiconNotification}}" id="blackColor" ></div></a>
+<div class="badge">5</div>
+</div>
+</div>
+<div id="background" class="col-xs-12 heightAdjust">
+<div style="position: relative;">
+<center>
+<img src="{{data.userdatas[index].image}}" id="ProfileImage" class="img-circle"/>
+</center><br/>
+<center>
+<div id="Name">
+{{data.userdatas[index].Name}}
+
+</div><br/>
+<div><img src="{{data.screen1.cakeImage}}" id="cake"></div><br/>
+<div><div id="wish">{{data.userdatas[index].Wishes}}</div></div><br/>
+<div ><div id="instruction">{{data.screen1.Notification1}}</div></div>
+<div><div id="instruction">{{data.screen1.Notification2}}</div></div>
+<div><div id="instruction">{{data.screen1.Notification3}}</div></div><br/>
+<div><img src="{{data.screen1.giftImage}}" id="giftCss" ></div>
+<div><div id="dinner">{{data.screen1.Dine}}</div></div>
+</center>
+</div>
+</div>
